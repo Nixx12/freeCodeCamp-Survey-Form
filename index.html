@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">League Of Legends Survey</h1>
+    <p id="description">Thank you for taking the time to take this survey!</p>
+    <form method="post" id="survey-form" action="">
+      <fieldset>
+        <label for="name-label">Enter Your Name: <input id="name-label" name="name" type="text" placeholder="Enter your full name..." required></label>
+        <label for="email-label">Enter Your Email: <input id="email-label" name="email" type="email" placeholder="Enter your email..." required></label>
+        <label for="number-label">Enter Your Age: <input id="number-label" name="age" type="number" placeholder="Enter your age..." min="13" max="100" required></label>
+      </fieldset>
+      <fieldset>
+        <h1>Which account are you refering to in this survey?</h1>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked> Personal Account</label>
+        <label for="friends-account"><input id="friends-account" type="radio" name="account-type"> Friends Account</label>
+        <label for="approved-data-usage"><input id="approved-data-usage" type="checkbox" name="approved-data-usage"> I accept the use of <a href="https://www.gov.uk/data-protection" target="_blank"><strong>My Data</strong></a> to be used for informational purposes.</label>
+      </fieldset>
+      <fieldset>
+        <label for="league-rank">What rank are you in Leauge of Legends?
+          <select name="league-rank" id="dropdown">
+            <option value="">(Select One)</option>
+            <option value="1">Iron</option>
+            <option value="2">Bronze</option>
+            <option value="3">Silver</option>
+            <option value="4">Gold</option>
+            <option value="5">Platinum</option>
+            <option value="6">Diamond</option>
+            <option value="7">Master</option>
+            <option value="8">Grandmaster</option>
+            <option value="9">Challenger</option>
+          </select>
+        </label>
+        <label for="additional-comments">
+          <textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
+        </label>
+      </fieldset>
+      <button id="submit" type="submit" class="submit-button">Submit Survey!</button>
+    </form>
+  </body>
+</html>
