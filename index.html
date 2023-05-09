@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">League Of Legends Survey</h1>
-    <p id="description">Thank you for taking the time to take this survey!</p>
     <form method="post" id="survey-form" action="">
-      <fieldset>
+      <fieldset class="fieldset-one">
+        <div class="header">
+          <h1 id="title">League Of Legends Survey</h1>
+          <p id="description" class="description">Thank you for taking the time to take this survey!</p>
+        </div>
+        <h1>Fill in the details for our survey!</h1>
         <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="Enter your full name..." required></label>
         <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter your email..." required></label>
         <label for="number" id="number-label">Enter Your Age: <input id="number" name="age" type="number" placeholder="Enter your age..." min="13" max="100" required></label>
@@ -24,16 +27,17 @@
             <option value="other">Other</option>
           </select>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-two">
         <h1>Would you recommend League of Legends to a friend?</h1>
-          <label for="definitely-recommend"><input id="personal-account" type="radio" name="survey-recommend" value="definitely-recommend" checked>Definitely</label>
+          <label for="definitely-recommend"><input id="definitely-recommend" type="radio" name="survey-recommend" value="definitely-recommend" checked>Definitely</label>
           <label for="maybe-recommend"><input id="maybe-recommend" type="radio" name="survey-recommend" value="maybe-recommend">Maybe</label>
           <label for="not-sure-recommend"><input id="not-sure-recommend" type="radio" name="survey-recommend" value="not-sure-recommend">Not Sure</label>
           <label for="would-not-recommend"><input id="would-not-recommend" type="radio" name="survey-recommend" value="would-not-recommend">No</label>
-        <p><strong>Before we can continue, do you agree for your data collected from this survey to be used?</strong></p>
+          <p><strong>Before we can continue, do you agree for your data collected from this survey to be used?</strong></p>
           <label for="approved-data-usage"><input id="approved-data-usage" type="checkbox" name="approved-data-usage" value="data-usage-approved" required> I accept the use of <a href="https://www.gov.uk/data-protection" target="_blank"><strong>My Data</strong></a> to be used for informational purposes.</label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-three">
+          <h1>What best describes you in league of legends?</h1>
           <p>What rank are you currently placed in?</p>        
             <select name="league-rank" id="dropdown" required>
               <option value="">(Select One)</option>
@@ -56,12 +60,13 @@
           <p>What champion do you play?</p>
             <textarea name="champion-selection" id="champion-selection" cols="23" rows="2" placeholder="Enter a champion name..."></textarea>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset-four">
         <h1>Do you have any additional comments?</h1>
           <textarea name="additional-comments" id="additional-comments" cols="30" rows="10" placeholder="How did you like our survey? Anything you recommend?..."></textarea>
         </label>
       </fieldset>
       <button id="submit" type="submit" class="submit-button">Submit Survey!</button>
     </form>
+    <img class="background-image" src="surveyKatarinaBackground.jpg" alt="Picture of the League of legends katarina skin 'Prestige Faerie Court Katarina'">
   </body>
 </html>
