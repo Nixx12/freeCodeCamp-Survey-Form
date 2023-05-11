@@ -103,3 +103,10 @@ input[type="submit"]:hover {
   background-color: rgba(54, 0, 108, 0.5);
   cursor: pointer;
 }
+
+select {
+  background-color: #36006c;
+  color: grey;
+  padding-left: 15px;
+  border: none;
+}
